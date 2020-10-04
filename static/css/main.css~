@@ -1,0 +1,82 @@
+html {
+    background-color:black;
+    color:white;
+    font-family: "terminus", monospace;
+    font-size:14pt;
+}
+
+h1 {
+    font-family: "arial", sans-serif;
+}
+
+body {
+    width:60%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow:1;
+}
+
+a.logo {
+    color:white;
+    text-decoration: none;
+    font-family: "arial", sans-serif;
+    font-size:60pt;
+    font-weight:700;
+    font-style:italic;
+}
+
+hr {
+    height:1px;
+    border: none;
+    background-color:white;
+    margin-top:0px;
+}
+
+.navbar-item::before {
+    content:'[';
+}
+
+.navbar-item::after {
+    content:']';
+}
+
+.navbar-item {
+    text-decoration:none;
+    color:white;
+    font-size:16pt;
+}
+
+.navbar-item:hover, .footer-item:hover {
+    text-decoration:none;
+    color:#e60073;
+}
+
+.footer-item {
+    text-decoration:none;
+    color:white;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding:0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color:#222;
+    font-size:12pt;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+    line-height: 1.30769231;
+    margin: 0;
+    overflow: auto;
+    scrollbar-color: var(--scrollbar) transparent;
+    padding: 1em 1.5em;
+}

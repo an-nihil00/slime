@@ -1,0 +1,12 @@
+<footer class="footer">
+  <hr/>
+  <ul>
+  {{ range .Site.Menus.social }}
+  <li>
+    <a href="{{ .URL }}" class="footer-item">
+      <span class="icon">{{ .Pre }}</span> {{ .Name }}
+    </a>
+  </li>
+  {{ end }}
+  </ul>
+</footer>
