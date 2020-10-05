@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <span class="post-meta">
+    <span class="icon"><i class='fa fa-pencil'></i></span>
+    <time>
+      {{ .PublishDate.Format "02 Jan 2006 3:04 PM" }}
+    </time>
+  </span>
+  {{ .Content }}
+</article>
+{{ end }}

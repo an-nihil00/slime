@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<ul>
+{{ range .Pages }}
+<li>
+  <p class="post-header">
+    <a href="{{ .Permalink }}" role="link" class="post-title">{{ .Title }}</a>
+    <span class="post-meta">
+      <span class="icon"><i class='fa fa-pencil'></i></span>
+      <time>
+	{{ .PublishDate.Format "02 Jan 2006 3:04 PM" }}
+      </time>
+    </span>
+  </p>
+  <p>
+    {{ with .Summary }}{{ . }}{{ end }}
+  </p>
+</li>
+{{ end }}
+</ul>
+{{ end }}
