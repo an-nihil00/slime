@@ -1,11 +1,11 @@
-<header>
+<header role="banner">
   <a href="/" title="home" class="logo">
     {{ .Site.Title }}
   </a>
   <hr>
   <nav class="navbar" role="navigation">
     {{ range .Site.Menus.main }}
-    <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+    <a href="{{ .URL }}" class="navbar-item" role="link">{{ .Name }}</a>
     {{ end }}
   </nav>
 </header>
