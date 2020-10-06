@@ -139,5 +139,17 @@ article a:hover {
 
 img {
     max-width:100%;
-    margin:0;
+    margin-bottom:1em;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+}
+
+.bottom {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    flex-grow:1;
 }
