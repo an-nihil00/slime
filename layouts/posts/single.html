@@ -1,9 +1,9 @@
 {{ define "main" }}
-<article>
+<article {{ if .Params.language }}lang="{{ .Params.language }}"{{ end }}>
   <header>
   <h1>{{ .Title }}</h1>
   <span class="post-meta">
-    <span class="icon"><i class='fa fa-pencil'></i></span>
+    <span class="icon"><i class='fa fa-pencil' aria-label="Published"></i></span>
     <time>
       {{ .PublishDate.Format "02 Jan 2006 3:04 PM" }}
     </time>

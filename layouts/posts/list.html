@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 <ul class="items">
 {{ range .Pages }}
-<li class="item">
+<li class="item" {{ if .Params.language }}lang="{{ .Params.language }}"{{ end }}>
   <p class="post-header">
     <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
     <span class="post-meta">
