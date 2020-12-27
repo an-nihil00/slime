@@ -17,6 +17,7 @@ h1, h2, h3 {
 }
 
 body {
+    background-color:black;
     width:50%;
     min-width:900px;
     margin:auto;
@@ -29,9 +30,9 @@ main {
     flex-grow:1;
 }
 
-a.logo {
+.logo {
     color:white;
-    text-decoration: none;
+    text-transform: uppercase;
     font-family: "arial", sans-serif;
     font-size:60pt;
     font-weight:700;
@@ -72,9 +73,16 @@ hr {
     color:white;
 }
 
-ul {
+.items {
     list-style-type: none;
     padding:0;
+    margin-bottom:0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding:0;
+    margin-top:0;
 }
 
 footer li {
@@ -152,4 +160,8 @@ main {
     flex-direction:column;
     justify-content:flex-end;
     flex-grow:1;
+}
+
+.item {
+    margin-bottom:1em;
 }

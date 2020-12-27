@@ -4,7 +4,7 @@
   {{ range .Site.Menus.social }}
   <li>
     <a href="{{ .URL }}" class="footer-item">
-      <span class="icon">{{ .Pre }}</span>{{ .Name }}
+      <span class="icon"><i class="{{ .Pre }}" aria-hidden="true"></i></span>{{ .Name }}
     </a>
   </li>
   {{ end }}
